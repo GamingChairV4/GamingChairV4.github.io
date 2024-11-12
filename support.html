@@ -3,127 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Game Combat Updates</title>
-    <link rel="stylesheet" href="./changelog_files/redesign.css">
+    <title>Game Features - RiseVape</title>
+    <link rel="stylesheet" href="./features_files/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <div class="container">
-                <div class="header_row">
-                    <div class="logo_header">
-                        <a href="./index.html" class="logo"><img src="./changelog_files/logo.webp" alt=""></a>
-                    </div>
-                    <div class="header_menu">
-                        <ul class="menu">
-                            <li><a href="./features.html">Features</a></li>
-                            <li><a href="https://discord.gg/ZqS836yx9k">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn_buy_now">
-                        <a href="https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/loadstring" class="blue_btn">Script</a>
-                    </div>
-                </div>
-            </div>
+            <h2>RiseVape Features</h2>
         </header>
 
-        <!-- Main Section -->
-        <section class="changelog_main">
-            <div class="container">
-                <div class="change_title">
-                    <h2>Game Combat Changelog</h2>
-                </div>
-
-                <!-- Game 1: Shadow Battlegrounds -->
-                <div class="game_section">
-                    <h3>Shadow Battlegrounds</h3>
-                    <div class="timeline_block">
-                        <div class="main_line_row">
-                            <div class="line_point"></div>
-                            <div class="date"><time datetime="">2 weeks ago</time></div>
-                            <div class="change_name">Combat Mechanics Update</div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme features_tag">Features</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Enhanced shadow strike animation and increased power for shadow abilities.</li>
-                                    <li>Added new "Shadow Summon" skill.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme improvements_tag">Improvements</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Improved targeting accuracy for "Shadow Blink" teleport move.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Game 2: Pixel Tamer -->
-                <div class="game_section">
-                    <h3>Pixel Tamer</h3>
-                    <div class="timeline_block">
-                        <div class="main_line_row">
-                            <div class="line_point"></div>
-                            <div class="date"><time datetime="">1 month ago</time></div>
-                            <div class="change_name">Combat Overhaul</div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme features_tag">Features</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Introduced monster fusion system for creating custom combat moves.</li>
-                                    <li>New combo chain mechanics for fast attacks.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme other_tag">Other</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Fixed critical damage calculations for PvP battles.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Game 3: Arise Battlegrounds -->
-                <div class="game_section">
-                    <h3>Arise Battlegrounds</h3>
-                    <div class="timeline_block">
-                        <div class="main_line_row">
-                            <div class="line_point"></div>
-                            <div class="date"><time datetime="">3 days ago</time></div>
-                            <div class="change_name">New Skills and Enhancements</div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme features_tag">Features</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Added "Energy Blast" ability with customizable power levels.</li>
-                                    <li>New defensive "Force Shield" mechanism.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="change_block">
-                            <div class="change_theme improvements_tag">Improvements</div>
-                            <div class="change_points">
-                                <ul>
-                                    <li>Reduced cooldown on core attacks to improve combat flow.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- Feature Tabs -->
+        <div class="table">
+            <div class="table_menu">
+                <ul>
+                    <li class="table_btn">
+                        <a href="#element1" class="table_button active" data-table="table1">Combat</a>
+                    </li>
+                    <li class="table_btn">
+                        <a href="#element2" class="table_button" data-table="table1">Blatant</a>
+                    </li>
+                    <li class="table_btn">
+                        <a href="#element3" class="table_button" data-table="table2">Render</a>
+                    </li>
+                    <li class="table_btn">
+                        <a href="#element4" class="table_button" data-table="table2">Utility</a>
+                    </li>
+                    <li class="table_btn">
+                        <a href="#element5" class="table_button" data-table="table3">World</a>
+                    </li>
+                    <li class="table_btn">
+                        <a href="#element6" class="table_button" data-table="table3">RiseVape Features</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+
+            <!-- Table Body for each Feature Category -->
+            <div class="table_body">
+                <!-- Combat Feature Section -->
+                <div class="table_overall table_combat" id="element1">
+                    <div class="table_row heading">
+                        <div class="feature_name">Features</div>
+                        <div class="table_v4">v4</div>
+                        <div class="table_lite">Lite</div>
+                    </div>
+                    <div class="table_row second_row">
+                        <div class="name_feature">Combat</div>
+                        <div class="nf_about">
+                            The Combat modules in RiseVape are designed to give you small, unnoticeable advantages in combat. With the right settings, these modules will help you crush your opponent completely undetected.
+                        </div>
+                    </div>
+
+                    <!-- Feature Rows -->
+                    <div class="table_row odd">
+                        <div class="sub_feature">AimAssist</div>
+                        <div class="sub_info_feature">
+                            <img class="s_i" src="./features_files/sub_info_h.svg" alt="">
+                            <div class="sub_info_info">Silently aims to close-range targets</div>
+                        </div>
+                        <div class="mark mark_v4"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="mark mark_lite"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="artwork">
+                            <div class="img_art"><img src="./features_files/aimassist_art.png" alt=""></div>
+                            <a href="./features_files/aimassist_art_zoom.png" data-fancybox data-type="image" class="zoom"><img src="./features_files/zoom.svg" alt="Zoom"></a>
+                        </div>
+                    </div>
+
+                    <div class="table_row">
+                        <div class="sub_feature">AutoClicker</div>
+                        <div class="sub_info_feature">
+                            <img class="s_i" src="./features_files/sub_info_h.svg" alt="">
+                            <div class="sub_info_info">Automatically clicks while holding down the attack button using a sword</div>
+                        </div>
+                        <div class="mark mark_v4"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="mark mark_lite"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="artwork">
+                            <div class="img_art"><img src="./features_files/autoclicker_art.png" alt=""></div>
+                            <a href="./features_files/autoclicker_art_zoom.png" data-fancybox data-type="image" class="zoom"><img src="./features_files/zoom.svg" alt="Zoom"></a>
+                        </div>
+                    </div>
+
+                    <div class="table_row odd">
+                        <div class="sub_feature">Reach</div>
+                        <div class="sub_info_feature">
+                            <img class="s_i" src="./features_files/sub_info_h.svg" alt="">
+                            <div class="sub_info_info">Increases your attack distance when using a sword</div>
+                        </div>
+                        <div class="mark mark_v4"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="mark mark_lite"><img src="./features_files/check_pr.svg" alt=""></div>
+                        <div class="artwork">
+                            <div class="img_art"><img src="./features_files/reach_art.png" alt=""></div>
+                            <a href="./features_files/reach_art_zoom.png" data-fancybox data-type="image" class="zoom"><img src="./features_files/zoom.svg" alt="Zoom"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add additional sections for Blatant, Render, Utility, World, and RiseVape Features in similar structure -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
