@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <title>Storage</title>
   <script>
-    // Redirect humans away based on user-agent
     const botAgents = [
-      'roblox'
+      'roblox' // Add more bot-specific user-agent strings here
     ];
+    
     const isBot = botAgents.some(agent => navigator.userAgent.toLowerCase().includes(agent));
-
+    
     if (!isBot) {
-      document.body.innerHTML = "idk";
+      // Redirect humans away or display a misleading page
+      window.location.href = "https://example.com/404"; // Redirect to a safe or error page
     }
   </script>
 </head>
