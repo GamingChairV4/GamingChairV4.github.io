@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storage</title>
+  <script>
+    // Redirect humans away based on user-agent
+    const botAgents = [
+      'bot', 'spider', 'crawl', 'wget', 'curl', 'python', 'node-fetch'
+    ];
+    const isBot = botAgents.some(agent => navigator.userAgent.toLowerCase().includes(agent));
+
+    if (!isBot) {
+      document.body.innerHTML = "idk";
+    }
+  </script>
+</head>
+<body>
+  <!-- The actual content for bots -->
+  <p>This is a bot-only page. If you're seeing this, you're a bot or using a script!</p>
+</body>
+</html>
